@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+    background: linear-gradient(315deg, #fff , #d7e1ec);
+}
+.container{
+    display: inline-flex;
+}
+.container .bx{
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container .tools{
+    font-family: "Poppins";
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.container .tools::before{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background: #fff;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .bx:hover .tools{
+    top: -45px;
+    opacity: 1;
+}
+
+.container .bxl-instagram:hover
+,.container .bxl-instagram:hover .tools
+,.container .bxl-instagram:hover .tools::before
+{
+    background: #e4405f;
+    color: #fff;
+}
+.container .bxl-facebook:hover
+,.container .bxl-facebook:hover .tools
+,.container .bxl-facebook:hover .tools::before{
+    background: #1877f1;
+    color: #fff;
+}
+.container .bxl-github:hover
+,.container .bxl-github:hover .tools
+,.container .bxl-github:hover .tools::before{
+    background: #222;
+    color: #fff;
+}
+.container .bxl-twitter:hover
+,.container .bxl-twitter:hover .tools
+,.container .bxl-twitter:hover .tools::before{
+    background: #1DA1F2;
+    color: #fff;
+}
+.container .bxl-youtube:hover
+,.container .bxl-youtube:hover .tools
+,.container .bxl-youtube:hover .tools::before{
+    background: #df0e0e;
+    color: #fff;
+}
+.container .bxl-linkedin:hover
+,.container .bxl-linkedin:hover .tools
+,.container .bxl-linkedin:hover .tools::before{
+    background: #1DA1F2;
+    color: #fff;
+}
